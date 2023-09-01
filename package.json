@@ -1,0 +1,28 @@
+{
+  "name": "gym",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "autoprefixer": "10.4.15",
+    "eslint": "8.48.0",
+    "eslint-config-next": "13.4.19",
+    "next": "13.4.19",
+    "postcss": "8.4.29",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-icons": "^4.10.1",
+    "react-slick": "^0.29.0",
+    "sharp": "^0.32.5",
+    "slick-carousel": "^1.8.1",
+    "tailwindcss": "3.3.3"
+  },
+  "devDependencies": {
+    "prettier": "3.0.3"
+  }
+}
