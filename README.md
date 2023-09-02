@@ -1,34 +1,56 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Power | Gym - Next.js Project
+
+Welcome to the Power力 | Gym project built with Next.js! This website is designed to showcase the services and offerings of Power Gym. Whether you're a gym enthusiast or a developer working on this project, you'll find all the necessary information below to get started.
+
+## Table of Contents
+
+1. [Getting Started](#getting-started)
+2. [Project Structure](#project-structure)
+3. [Technologies Used](#technologies-used)
+4. [Contributing](#contributing)
+5. [License](#license)
 
 ## Getting Started
 
-First, run the development server:
+To run this project locally, follow these steps:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+1. **Clone the repository:**
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+    git clone https://github.com/yourusername/gym-website-nextjs.git
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+2. **Install dependencies:**
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+    npm install
 
-## Learn More
+3. **Start the development server:**
 
-To learn more about Next.js, take a look at the following resources:
+    npm run dev
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+4. **Open your browser:**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+    Visit http://localhost:3000 in your web browser to see the gym website.
 
-## Deploy on Vercel
+## Project Structure
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+**Project Structure**
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- `/app`: Contains the Next.js pages for different pages of the website.
+- `/components`: Reusable React components used throughout the site.
+- `/public`: Static assets such as images.
+- `/styles`: Stylesheets, including CSS modules.
+
+## Technologies Used
+
+**Technologies Used**
+
+- [Next.js](https://nextjs.org/) - React framework for building server-rendered React applications.
+- [React](https://reactjs.org/) - JavaScript library for building user interfaces.
+- [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS framework.
+- [Other dependencies] - Check the `package.json` file for a full list of project dependencies.
+
+## License
+
+**License**
+
+This project is licensed under the MIT License.
+

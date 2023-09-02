@@ -13,7 +13,7 @@ const FeatureGrid = ( {textColour, hoverColour, iconColour } ) => {
         </div>
         <div className="flex flex-col justify-center items-center">
             <LuApple size={60} className={`text-${iconColour}`} />
-            <h3 className={`text-${textColour} uppercase text-xl py-4 tracking-wide hover:text-${hoverColour} duration-300 cursor-pointer`}>Healthy nutrition plan</h3>
+            <h3 className={`text-${textColour} uppercase text-xl py-4 tracking-wide hover:text-${hoverColour} duration-300 cursor-pointer`}>Customised nutrition plans</h3>
             <p className="text-center w-[70%] leading-7">Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipisc.</p>
         </div>
         <div className="flex flex-col justify-center items-center">

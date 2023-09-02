@@ -6,7 +6,7 @@ import { usePathname } from 'next/navigation'
 import  Slider from "react-slick"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
-import "../app/slick.css"
+import "../app/styles/slick.css"
 import { SlArrowRight, SlArrowLeft } from "react-icons/sl"
 import { BiSolidQuoteLeft } from "react-icons/bi"
 import runner from "../../public/assets/runner.jpeg"
@@ -58,7 +58,7 @@ const QuoteSection = () => {
           <div className="text-center mx-auto w-full px-5 xs:px-10">
                 <BiSolidQuoteLeft size={40} aria-hidden="true" className="text-white flex justify-center w-full mb-12" />
                 <blockquote>
-                  <p className="font-[teko] text-white text-2xl md:text-4xl uppercase tracking-wide text-center w-full lg:w-[60%] mx-auto leading-snug">I am at an age where I just want to be fit and healthy. Our bodies are our responsibility! So start caring for your body and it will care for you. Eat clean and workout hard.</p>
+                  <p className="font-[teko] text-white text-2xl md:text-4xl uppercase tracking-wide text-center w-full lg:w-[60%] mx-auto leading-snug">Reaching an age where prioritizing fitness and health matters most. Our bodies rely on us! Initiate self-care for your body, and it reciprocates. Embrace a clean diet and intense exercise.</p>
                   <p className="text-white uppercase tracking-widest mt-12 font-normal">John Smith, Nutritionist</p>
                 </blockquote>
             </div>
@@ -66,7 +66,7 @@ const QuoteSection = () => {
             <div className="text-center mx-auto w-full px-5 xs:px-10">
                 <BiSolidQuoteLeft size={40} aria-hidden="true" className="text-white flex justify-center w-full mb-12" />
                 <blockquote>
-                  <p className="font-[teko] text-white text-2xl md:text-4xl uppercase tracking-wide text-center w-full lg:w-[60%] mx-auto leading-snug">I am at an age where I just want to be fit and healthy. Our bodies are our responsibility! So start caring for your body and it will care for you. Eat clean and workout hard.</p>
+                  <p className="font-[teko] text-white text-2xl md:text-4xl uppercase tracking-wide text-center w-full lg:w-[60%] mx-auto leading-snug">Reaching an age where prioritizing fitness and health matters most. Our bodies rely on us! Initiate self-care for your body, and it reciprocates. Embrace a clean diet and intense exercise.</p>
                   <p className="text-white uppercase tracking-widest mt-12 font-normal">John Smith, Nutritionist</p>
                 </blockquote>
             </div>

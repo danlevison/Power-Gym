@@ -10,7 +10,7 @@ const ResultsSection = () => {
             <div className="grid md:grid-cols-2 items-center">
                 <div className="w-full md:w-[80%] lg:w-[60%] mx-auto px-10 py-28">
                     <h2 className="text-white text-5xl uppercase tracking-wide w-[80%]">Built to bring the best results</h2>
-                    <p className="leading-7 py-4">Tune up your shoulders, legs and lower back. Choose a workout that can improve your balance, strength and overall condition. Our team of experts will follow you through the whole workout process. Your body will thank you.</p>
+                    <p className="leading-7 py-4">Condition your shoulders, legs, and lower back. Opt for a workout to enhance balance, strength, and overall health. Our team of experts will support you through the entire fitness routine. Your body will appreciate it.</p>
                     <div className="mt-6">
                         <Link 
                             href={"/about"}

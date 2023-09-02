@@ -1,7 +1,6 @@
-import "./globals.css"
+import "./styles/globals.css"
 import { Ubuntu } from "next/font/google"
 import Nav from "@/components/Nav"
-import Banner from "@/components/Banner"
 import Footer from "@/components/Footer"
 
 const ubuntu = Ubuntu({
