@@ -55,7 +55,7 @@ const QuoteSection = () => {
 
         <div className="absolute top-0 left-[50%] translate-x-[-50%] flex justify-center items-center h-full w-full">
           <Slider {...settings} className="cursor-grab z-[100] max-w-[100%]">
-          <div className="text-center mx-auto w-full px-16">
+          <div className="text-center mx-auto w-full px-5 xs:px-10">
                 <BiSolidQuoteLeft size={40} aria-hidden="true" className="text-white flex justify-center w-full mb-12" />
                 <blockquote>
                   <p className="font-[teko] text-white text-2xl md:text-4xl uppercase tracking-wide text-center w-full lg:w-[60%] mx-auto leading-snug">I am at an age where I just want to be fit and healthy. Our bodies are our responsibility! So start caring for your body and it will care for you. Eat clean and workout hard.</p>
@@ -63,7 +63,7 @@ const QuoteSection = () => {
                 </blockquote>
             </div>
 
-            <div className="text-center mx-auto w-full px-16">
+            <div className="text-center mx-auto w-full px-5 xs:px-10">
                 <BiSolidQuoteLeft size={40} aria-hidden="true" className="text-white flex justify-center w-full mb-12" />
                 <blockquote>
                   <p className="font-[teko] text-white text-2xl md:text-4xl uppercase tracking-wide text-center w-full lg:w-[60%] mx-auto leading-snug">I am at an age where I just want to be fit and healthy. Our bodies are our responsibility! So start caring for your body and it will care for you. Eat clean and workout hard.</p>

@@ -20,6 +20,7 @@ const Classes = () => {
                         src={class2}
                         alt="Class using rowing machines in a circuit training class"
                         className="w-full h-[260px]"
+                        style={{objectFit: "cover"}}
                     />
                     <div className="p-6">
                         <p className="text-sm uppercase">March 4, 2023</p>
@@ -39,6 +40,7 @@ const Classes = () => {
                         src={class1}
                         alt="Class performing dumbbell snatches in a high intensity interval training class"
                         className="w-full h-[260px]"
+                        style={{objectFit: "cover"}}
                     />
                     <div className="p-6">
                         <p className="text-sm uppercase">March 4, 2023</p>
@@ -58,6 +60,7 @@ const Classes = () => {
                         src={class3}
                         alt="Class holding a plank in combat training class"
                         className="w-full h-[260px]"
+                        style={{objectFit: "cover"}}
                     />
                     <div className="p-6">
                         <p className="text-sm uppercase">March 4, 2023</p>

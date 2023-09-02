@@ -4,6 +4,8 @@ import React, {useEffect, useState} from 'react'
 import Link from "next/link"
 import { usePathname } from 'next/navigation'
 import { RxHamburgerMenu } from "react-icons/rx"
+import { RiCloseLine } from "react-icons/ri"
+import { TbMenu } from "react-icons/tb"
 
 const Nav = () => {
   const [nav, setNav] = useState(false)
@@ -33,7 +35,7 @@ const Nav = () => {
                 <Link
                   onClick={() => setNav(false)}
                   href={"/"}
-                  className="font-[teko] text-2xl lg:text-4xl uppercase font-semibold text-black md:text-white"
+                  className="font-[teko] text-2xl lg:text-4xl uppercase font-semibold text-black md:text-white z-50"
                 >
                   Power <span className="text-accent">力</span>
                 </Link>
@@ -66,8 +68,8 @@ const Nav = () => {
                         <Link href={"/contact"} className={pathname === "/contact" ? "text-accent" : "text-white hover:text-accent"}>Contact</Link>
                     </li>
                 </ul>
-                <button onClick={handleNav} aria-label="Open menu" className="md:hidden cursor-pointer">
-                    <RxHamburgerMenu size={25} className="text-black" />
+                <button onClick={handleNav} aria-label="Open menu" className="z-50 md:hidden cursor-pointer">
+                    {nav ? <RiCloseLine size={25} className="text-black" /> : <TbMenu size={25} className="text-black" />}
                 </button>
             </div>
           </div>
@@ -75,35 +77,30 @@ const Nav = () => {
           <div className={nav ? "md:hidden fixed top-16 w-full h-screen z-[100]" : "md:hidden"}>
               <div className={
                   nav 
-                      ? "fixed top-16 w-full text-center p-10 h-screen ease-in duration-500 bg-[#242424] z-[100]" 
-                      : "fixed top-[-100%] p-10 w-full text-center ease-in duration-300 h-screen"}>
-              <div>
-                  <div className="flex justify-between items-center w-full">
-                    
-                  </div>
-      
-                  <div className="border-b border-primaryText my-4">
-                      <p className="w-[100%] md:w-[90%] py-4 break-words text-secondaryText tracking-widest uppercase font-light">Power<span className="text-accent">力</span></p>
-                  </div>
-              </div>
-              <div className="py-12">
-              {nav && (
-                  <ul onClick={handleNav} className="flex flex-col gap-20 uppercase text-primaryText text-sm tracking-widest">
-                    <li>
-                      <Link href={"/"} className={pathname === "/" ? "text-accent" : ""}>Home</Link>
-                    </li>
-                    <li>
-                      <Link href={"/about"} className={pathname === "/about" ? "text-accent" : ""}>About us</Link>
-                    </li>
-                    <li>
-                      <Link href={"/"} className={pathname === "pricing" ? "text-accent" : ""}>Pricing</Link>
-                    </li>
-                    <li>
-                      <Link href={"/contact"} className={pathname === "contact" ? "text-accent" : ""}>Contact</Link>
-                    </li>
-                  </ul>
-              )}
-              </div>   
+                      ? "fixed w-full text-center p-10 h-screen translate-y-[0%] transition-transform duration-500 ease-in bg-[#242424] z-[100]" 
+                      : "fixed p-10 w-full text-center translate-y-[-100%] transition-transform duration-300 ease-out h-screen"}
+              >
+                  {nav && (
+                    <>
+                      <div className="border-b border-primaryText mb-16">
+                        <p className="w-[100%] md:w-[90%] py-4 break-words text-secondaryText tracking-widest uppercase font-light">Power<span className="text-accent">力</span></p>
+                      </div>
+                      <ul onClick={handleNav} className="flex flex-col gap-28 uppercase text-primaryText text-sm tracking-widest">
+                        <li>
+                          <Link href={"/"} className={pathname === "/" ? "text-accent" : ""}>Home</Link>
+                        </li>
+                        <li>
+                          <Link href={"/about"} className={pathname === "/about" ? "text-accent" : ""}>About us</Link>
+                        </li>
+                        <li>
+                          <Link href={"/pricing"} className={pathname === "pricing" ? "text-accent" : ""}>Pricing</Link>
+                        </li>
+                        <li>
+                          <Link href={"/contact"} className={pathname === "contact" ? "text-accent" : ""}>Contact</Link>
+                        </li>
+                      </ul>
+                    </>
+                  )}
               </div>
           </div>
         </nav>

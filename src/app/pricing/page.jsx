@@ -16,7 +16,7 @@ const Pricing = () => {
                 className="w-full h-[220px] md:h-auto max-w-full"
                 style={{objectFit: "cover" , objectPosition: "center top"}}
             />
-            <div className="absolute inset-0 bg-black/50"></div>
+            <div className="absolute inset-0 bg-black/40"></div>
             <h1 className="absolute top-[50%] left-[50%] translate-x-[-50%] md:left-[30%] lg:left-[25%] text-white uppercase text-4xl sm:text-6xl md:text-8xl tracking-wide">Pricing</h1>
         </div>
 
