@@ -7,8 +7,7 @@ Welcome to the Power力 | Gym project built with Next.js! This website is design
 1. [Getting Started](#getting-started)
 2. [Project Structure](#project-structure)
 3. [Technologies Used](#technologies-used)
-4. [Contributing](#contributing)
-5. [License](#license)
+4. [License](#license)
 
 ## Getting Started
 
@@ -16,7 +15,7 @@ To run this project locally, follow these steps:
 
 1. **Clone the repository:**
 
-    git clone https://github.com/yourusername/gym-website-nextjs.git
+    git clone https://github.com/danlevison/Power-gym.git
 
 2. **Install dependencies:**
 
