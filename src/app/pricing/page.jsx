@@ -2,7 +2,7 @@ import React from 'react'
 import Image from "next/image"
 import Link from "next/link"
 import { AiFillStar } from "react-icons/ai"
-import pricingImg from "../../../public/assets/pricing-img.jpeg"
+import pricingImg from "../../../public/assets/pricing-img.jpg"
 import QuoteSection from "@/components/QuoteSection"
 
 const Pricing = () => {

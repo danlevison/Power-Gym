@@ -3,7 +3,7 @@ import Image from "next/image"
 import ContactForm from "@/components/contact/ContactForm"
 import Location from "@/components/contact/Location"
 import SocialsBanner from "@/components/contact/SocialsBanner"
-import contactImg from "../../../public/assets/contact-img.jpeg"
+import contactImg from "../../../public/assets/contact-img.jpg"
 
 const Contact = () => {
   return (

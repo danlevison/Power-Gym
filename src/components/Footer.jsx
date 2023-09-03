@@ -125,7 +125,7 @@ const Footer = () => {
             </div>
 
             <div className="bg-[#202020] py-8 px-10 w-full text-center">
-                <p>Copyright &copy; <span>{currentYear}</span> All rights reserved | Website by <a href={"https://danlevison.vercel.app/"} target="_blank" className="font-bold text-[#717274] hover:underline hover:text-white duration-300">Dan Levison <span className="sr-only">Opens in a new tab</span></a></p>
+                <p>Copyright &copy; <span>{currentYear}</span> All rights reserved | Website developed by <a href={"https://danlevison.vercel.app/"} target="_blank" className="font-bold text-[#717274] hover:text-white duration-300">Dan Levison <span className="sr-only">Opens in a new tab</span></a></p>
             </div>
         </footer>
     )

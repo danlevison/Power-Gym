@@ -4,7 +4,7 @@ import FeatureGrid from "@/components/FeatureGrid"
 import QuoteSection from "@/components/QuoteSection"
 import Team from "@/components/about/Team"
 import Classes from "@/components/about/Classes"
-import aboutImg from "../../../public/assets/about-img.jpeg"
+import aboutImg from "../../../public/assets/about-img.jpg"
 import Banner from "@/components/Banner"
 
 const About = () => {

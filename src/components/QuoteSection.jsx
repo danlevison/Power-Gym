@@ -9,7 +9,7 @@ import "slick-carousel/slick/slick-theme.css"
 import "../app/styles/slick.css"
 import { SlArrowRight, SlArrowLeft } from "react-icons/sl"
 import { BiSolidQuoteLeft } from "react-icons/bi"
-import runner from "../../public/assets/runner.jpeg"
+import runner from "../../public/assets/runner.jpg"
 
 const QuoteSection = () => {
   const pathname = usePathname()
