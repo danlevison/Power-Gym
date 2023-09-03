@@ -29,13 +29,13 @@ const Nav = () => {
   }
 
   return (
-    <nav className={`fixed w-full bg-white ${scrollY === 0 ? 'md:bg-transparent' : 'md:bg-black'} h-16 z-[100]`} style={{transition: "background-color 0.4s ease"}}>
+    <nav className={`fixed w-full bg-black ${scrollY === 0 ? 'md:bg-transparent' : 'md:bg-black'} h-16 z-[100]`} style={{transition: "background-color 0.4s ease"}}>
           <div className="flex justify-center items-center h-full p-10">
             <div className="flex justify-between md:justify-around items-center w-full">
                 <Link
                   onClick={() => setNav(false)}
                   href={"/"}
-                  className="font-[teko] text-2xl lg:text-4xl uppercase font-semibold text-black md:text-white z-50"
+                  className="font-[teko] text-2xl lg:text-4xl uppercase font-semibold text-white z-50"
                 >
                   Power <span className="text-accent">力</span>
                 </Link>
@@ -69,7 +69,7 @@ const Nav = () => {
                     </li>
                 </ul>
                 <button onClick={handleNav} aria-label="Open menu" className="z-50 md:hidden cursor-pointer">
-                    {nav ? <RiCloseLine size={25} className="text-black" /> : <TbMenu size={25} className="text-black" />}
+                    {nav ? <RiCloseLine size={25} className="text-white" /> : <TbMenu size={25} className="text-white" />}
                 </button>
             </div>
           </div>
