@@ -17,7 +17,7 @@ const Contact = () => {
                 style={{objectFit: "cover" , objectPosition: "center top"}}
             />
             <div className="absolute inset-0 bg-black/60"></div>
-            <h1 className="absolute top-[50%] left-[50%] translate-x-[-50%] md:left-[30%] lg:left-[25%] text-white uppercase text-4xl sm:text-6xl md:text-8xl tracking-wide">Contact us</h1>
+            <h1 className="absolute top-[50%] left-[50%] translate-x-[-50%] md:left-[30%] lg:left-[25%] text-white uppercase text-4xl sm:text-6xl md:text-8xl tracking-wide text-center">Contact us</h1>
         </div>
         <section className="max-w-[1440px] mx-auto flex flex-col gap-10 md:flex-row py-24 px-10">
             <Location />

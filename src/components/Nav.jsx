@@ -28,6 +28,14 @@ const Nav = () => {
     setNav(!nav)
   }
 
+  const NavLink = ({href, title, className=""}) => {
+    return (
+      <Link onClick={() => setNav(false)} href={href} className={`${className}`}>
+        {title}
+      </Link>
+    )
+  }
+
   return (
     <nav className={`fixed w-full bg-black ${scrollY === 0 ? 'md:bg-transparent' : 'md:bg-black'} h-16 z-[100]`} style={{transition: "background-color 0.4s ease"}}>
           <div className="flex justify-center items-center h-full p-10">
@@ -41,11 +49,11 @@ const Nav = () => {
                 </Link>
                 <ul className="hidden md:flex gap-12 lg:gap-16 uppercase tracking-[0.2em] font-[teko] text-white text-sm lg:text-base">
                     <li>
-                        <Link href={"/"} className={pathname === "/" ? "text-accent py-4" : "text-white hover:text-accent py-4"}>Home</Link>
+                        <NavLink href={"/"} title={"Home"} className={pathname === "/" ? "text-accent py-4" : "text-white hover:text-accent py-4"} />
                     </li>
                     <li className="relative">
                         <div className="group dropdown">
-                            <Link href={"/about"} className={pathname === "/about" ? "text-accent py-4" : "text-white hover:text-accent py-4"}>About us</Link>
+                            <NavLink href={"/about"} title={"About us"} className={pathname === "/about" ? "text-accent py-4" : "text-white hover:text-accent py-4"} />
                             <div className="dropdown-container pointer-events-none translate-y-[-8px] transition 150ms ease-in-out, transform 150ms ease-in-out group-hover:translate-y-0 opacity-0 group-hover:opacity-100 absolute left-[50%] translate-x-[-50%] md:top-[168%] lg:top-[150%] bg-[#1b1b1b] pt-2 md:pt-2 group-hover:pointer-events-auto">
                                 <ul className="text-center text-primaryText shadow-xl">
                                     <li className="hover:text-accent">
@@ -62,10 +70,10 @@ const Nav = () => {
                         </div>
                     </li>
                     <li>
-                        <Link href={"/pricing"} className={pathname === "/pricing" ? "text-accent" : "text-white hover:text-accent"}>Pricing</Link>
+                        <NavLink href={"/pricing"} title={"Pricing"} className={pathname === "/pricing" ? "text-accent" : "text-white hover:text-accent"} />
                     </li>
                     <li>
-                        <Link href={"/contact"} className={pathname === "/contact" ? "text-accent" : "text-white hover:text-accent"}>Contact</Link>
+                        <NavLink href={"/contact"} title={"Contact"} className={pathname === "/contact" ? "text-accent" : "text-white hover:text-accent"} />
                     </li>
                 </ul>
                 <button onClick={handleNav} aria-label="Open menu" className="z-50 md:hidden cursor-pointer">
@@ -85,18 +93,18 @@ const Nav = () => {
                       <div className="border-b border-primaryText mb-16">
                         <p className="w-[100%] md:w-[90%] py-4 break-words text-secondaryText tracking-widest uppercase font-light">Power<span className="text-accent">力</span></p>
                       </div>
-                      <ul onClick={handleNav} className="flex flex-col gap-28 uppercase text-primaryText text-sm tracking-widest">
+                      <ul className="flex flex-col gap-28 uppercase text-primaryText text-sm tracking-widest">
                         <li>
-                          <Link href={"/"} className={pathname === "/" ? "text-accent" : ""}>Home</Link>
+                          <NavLink href={"/"} title={"Home"} className={pathname === "/" ? "text-accent" : ""} />
                         </li>
                         <li>
-                          <Link href={"/about"} className={pathname === "/about" ? "text-accent" : ""}>About us</Link>
+                          <NavLink href={"/about"} title={"About us"}  className={pathname === "/about" ? "text-accent" : ""} />
                         </li>
                         <li>
-                          <Link href={"/pricing"} className={pathname === "pricing" ? "text-accent" : ""}>Pricing</Link>
+                          <NavLink href={"/pricing"} title={"Pricing"} className={pathname === "/pricing" ? "text-accent" : ""} />
                         </li>
                         <li>
-                          <Link href={"/contact"} className={pathname === "contact" ? "text-accent" : ""}>Contact</Link>
+                          <NavLink href={"/contact"} title={"Contact"} className={pathname === "/contact" ? "text-accent" : ""} />
                         </li>
                       </ul>
                     </>

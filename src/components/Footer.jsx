@@ -96,22 +96,28 @@ const Footer = () => {
                     <div>
                         <h2 className="text-white text-3xl uppercase">Contact</h2>
                         <form className="flex flex-col gap-2 py-8">
+                            <label htmlFor="name" className="sr-only">Name</label>
                             <input 
                                 type="text"
                                 placeholder="Name"
-                                className="bg-[#212121] p-3 outline-none"
+                                id="name"
+                                className="bg-[#212121] p-3 outline-none w-full"
                                 required
                             />
+                            <label htmlFor="email" className="sr-only">Email</label>
                             <input 
                                 type="email"
+                                id="email"
                                 placeholder="E-mail"
-                                className="bg-[#212121] p-3 outline-none"
+                                className="bg-[#212121] p-3 outline-none w-full"
                                 required
                             />
+                            <label htmlFor="message" className="sr-only">Message</label>
                             <textarea 
                                 placeholder="Message"
-                                className="bg-[#212121] p-3 outline-none"
                                 rows={4}
+                                id="message"
+                                className="bg-[#212121] p-3 outline-none"
                                 required
                             >
 
