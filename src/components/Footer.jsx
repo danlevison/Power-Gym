@@ -102,6 +102,7 @@ const Footer = () => {
                                 placeholder="Name"
                                 id="name"
                                 className="bg-[#212121] p-3 outline-none w-full"
+                                aria-required
                                 required
                             />
                             <label htmlFor="email" className="sr-only">Email</label>
@@ -110,6 +111,7 @@ const Footer = () => {
                                 id="email"
                                 placeholder="E-mail"
                                 className="bg-[#212121] p-3 outline-none w-full"
+                                aria-required
                                 required
                             />
                             <label htmlFor="message" className="sr-only">Message</label>
@@ -118,6 +120,7 @@ const Footer = () => {
                                 rows={4}
                                 id="message"
                                 className="bg-[#212121] p-3 outline-none"
+                                aria-required
                                 required
                             >
 

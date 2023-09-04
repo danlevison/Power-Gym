@@ -58,7 +58,7 @@ const QuoteSection = () => {
           <div className="text-center mx-auto w-full px-5 xs:px-10">
                 <BiSolidQuoteLeft size={40} aria-hidden="true" className="text-white flex justify-center w-full mb-12" />
                 <blockquote>
-                  <p className="font-[teko] text-white text-2xl md:text-4xl uppercase tracking-wide text-center w-full lg:w-[60%] mx-auto leading-snug">Reaching an age where prioritizing fitness and health matters most. Our bodies rely on us! Initiate self-care for your body, and it reciprocates. Embrace a clean diet and intense exercise.</p>
+                  <h2 className="text-white text-2xl md:text-4xl uppercase tracking-wide text-center w-full lg:w-[60%] mx-auto leading-snug">Reaching an age where prioritizing fitness and health matters most. Our bodies rely on us! Initiate self-care for your body, and it reciprocates. Embrace a clean diet and intense exercise.</h2>
                   <p className="text-white uppercase tracking-widest mt-12 font-normal">John Smith, Nutritionist</p>
                 </blockquote>
             </div>
@@ -66,7 +66,7 @@ const QuoteSection = () => {
             <div className="text-center mx-auto w-full px-5 xs:px-10">
                 <BiSolidQuoteLeft size={40} aria-hidden="true" className="text-white flex justify-center w-full mb-12" />
                 <blockquote>
-                  <p className="font-[teko] text-white text-2xl md:text-4xl uppercase tracking-wide text-center w-full lg:w-[60%] mx-auto leading-snug">Reaching an age where prioritizing fitness and health matters most. Our bodies rely on us! Initiate self-care for your body, and it reciprocates. Embrace a clean diet and intense exercise.</p>
+                  <h2 className="text-white text-2xl md:text-4xl uppercase tracking-wide text-center w-full lg:w-[60%] mx-auto leading-snug">Reaching an age where prioritizing fitness and health matters most. Our bodies rely on us! Initiate self-care for your body, and it reciprocates. Embrace a clean diet and intense exercise.</h2>
                   <p className="text-white uppercase tracking-widest mt-12 font-normal">John Smith, Nutritionist</p>
                 </blockquote>
             </div>

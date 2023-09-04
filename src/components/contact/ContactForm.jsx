@@ -8,6 +8,8 @@ const ContactForm = () => {
             type="text" 
             placeholder="First Name"
             id="firstName"
+            required
+            aria-required
             className="bg-[#F7F7F7] placeholder:text-[#313646] py-4 px-5"
         />
         <label htmlFor="lastName" className="sr-only">Last name</label>
@@ -15,6 +17,8 @@ const ContactForm = () => {
             type="text" 
             placeholder="Last Name"
             id="lastName"
+            required
+            aria-required
             className="bg-[#F7F7F7] placeholder:text-[#313646] py-4 px-5" 
         />
         <label htmlFor="phone" className="sr-only">Phone number</label>
@@ -22,13 +26,17 @@ const ContactForm = () => {
             type="tel" 
             placeholder="Phone"
             id="phone"
+            required
+            aria-required
             className="bg-[#F7F7F7] placeholder:text-[#313646] py-4 px-5" 
         />
         <label htmlFor="email" className="sr-only">Email</label>
         <input 
             type="email" 
             placeholder="Email"
-            id="email" 
+            id="email"
+            required
+            aria-required 
             className="bg-[#F7F7F7] placeholder:text-[#313646] py-4 px-5"
         />
         <label htmlFor="message" className="sr-only">Message</label>
@@ -36,6 +44,8 @@ const ContactForm = () => {
             placeholder="Message" 
             rows={6}
             id="message"
+            required
+            aria-required
             className="bg-[#F7F7F7] placeholder:text-[#313646] py-4 px-5"
         >
         </textarea>
