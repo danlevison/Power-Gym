@@ -6,6 +6,9 @@ import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
 
 const Banner = () => {
+
+    const sponsors = ["Next Sport", "Flex Fitness", "Fit Club", "Max Core", "Zenflex"]
+
     var settings = {
         dots: false,
         arrows: false,
@@ -38,21 +41,13 @@ const Banner = () => {
   return (
     <section className="bg-accent flex justify-center items-center h-[200px] w-full">
             <Slider {...settings} className="text-center cursor-grab w-[80%]">
-                <div>
-                    <h2 className="text-white uppercase text-5xl">Next Sport</h2>
-                </div>
-                <div>
-                    <h2 className="text-white uppercase text-5xl">Flex Fitness</h2>
-                </div>
-                <div>
-                    <h2 className="text-white uppercase text-5xl">Fit Club</h2>
-                </div>
-                <div>
-                    <h2 className="text-white uppercase text-5xl">Max Core</h2>
-                </div>
-                <div>
-                    <h2 className="text-white uppercase text-5xl">ZenFlex</h2>
-                </div>
+              {sponsors.map((sponsor) => (
+                <ul key={sponsor}>
+                  <li>
+                    <h2 className="text-white uppercase text-5xl">{sponsor}</h2>
+                  </li>
+                </ul>
+              ))}
             </Slider>
     </section>
   )

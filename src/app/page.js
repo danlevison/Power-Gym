@@ -2,7 +2,7 @@ import LandingPage from "@/components/LandingPage"
 import ServicesSection from "@/components/ServicesSection"
 import ResultsSection from "@/components/ResultsSection"
 import QuoteSection from "@/components/QuoteSection"
-import Pricing from "@/components/Pricing"
+import PricingSection from "@/components/PricingSection"
 import Banner from "@/components/Banner"
 
 export default function Home() {
@@ -12,7 +12,7 @@ export default function Home() {
       <ServicesSection />
       <ResultsSection />
       <QuoteSection />
-      <Pricing />
+      <PricingSection />
       <Banner />
     </main>
   ) 

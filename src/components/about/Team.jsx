@@ -51,9 +51,9 @@ const Team = () => {
             </Link>
         </div>
         
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10 pb-16">
+        <ul className="grid md:grid-cols-2 lg:grid-cols-4 gap-10 pb-16">
             {team.map((trainer) => (
-                <div key={trainer.name} className="relative group">
+                <li key={trainer.name} className="relative group">
                     <Image 
                         src={trainer.image}
                         alt={trainer.alt}
@@ -68,9 +68,9 @@ const Team = () => {
                             <ImInstagram size={25} className="hover:text-accent duration-300 cursor-pointer" />
                         </div>
                     </div>
-                </div>
+                </li>
             ))}
-        </div>
+        </ul>
     </section>
   )
 }

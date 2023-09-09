@@ -3,7 +3,6 @@
 import React, {useEffect, useState} from 'react'
 import Link from "next/link"
 import { usePathname } from 'next/navigation'
-import { RxHamburgerMenu } from "react-icons/rx"
 import { RiCloseLine } from "react-icons/ri"
 import { TbMenu } from "react-icons/tb"
 
