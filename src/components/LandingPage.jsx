@@ -1,11 +1,11 @@
 import React from 'react'
 import Image from "next/image"
 import MotionHeadings from "./MotionHeadings"
-import heroImg from "../../public/assets/hero-img.jpg"
+import heroImg from "../../public/assets/hero-img-test.jpg"
 
 const Main = () => {
   return (
-    <div className="flex flex-col w-full bg-black min-h-screen" >
+    <div className="flex flex-col w-full bg-black min-h-screen">
       <div className="relative flex flex-col justify-center items-center min-h-screen">
             <Image 
                 alt="Muscular man showcasing his back muscles."
@@ -13,12 +13,10 @@ const Main = () => {
                 placeholder="blur"
                 quality={100}
                 priority
-                fill
                 sizes="100vw"
-                className="w-full"
                 style={{objectFit: "cover"}}
             />
-            <div className="absolute inset-0 bg-black/50 md:bg-transparent"></div>
+            <div className="absolute inset-0 bg-black/20"></div>
             <MotionHeadings />
       </div>
     </div>
