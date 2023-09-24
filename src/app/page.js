@@ -6,14 +6,14 @@ import PricingSection from "@/components/PricingSection"
 import Banner from "@/components/Banner"
 
 export default function Home() {
-  return (
-    <main className="w-full">
-      <LandingPage />
-      <ServicesSection />
-      <ResultsSection />
-      <QuoteSection />
-      <PricingSection />
-      <Banner />
-    </main>
-  ) 
+	return (
+		<main className="w-full">
+			<LandingPage />
+			<ServicesSection />
+			<ResultsSection />
+			<QuoteSection />
+			<PricingSection />
+			<Banner />
+		</main>
+	)
 }

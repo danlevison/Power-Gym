@@ -1,23 +1,28 @@
-@import url('https://fonts.googleapis.com/css2?family=Teko:wght@600&family=Ubuntu:wght@300;400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Teko:wght@600&family=Ubuntu:wght@300;400&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --font-ubuntu: "Ubuntu", sans-serif;
-  --font-teko: "Teko", sans-serif;
+	--font-ubuntu: "Ubuntu", sans-serif;
+	--font-teko: "Teko", sans-serif;
 }
 
 @layer base {
-  html {
-    font-family: var(--font-ubuntu);
-    font-weight: 300;
-    color: #9c9c9c;
-  }
+	html {
+		font-family: var(--font-ubuntu);
+		font-weight: 300;
+		color: #9c9c9c;
+	}
 
-  h1,h2,h3,h4,h5,h6 {
-    font-family: var(--font-teko);
-    font-weight: 600;
-  }
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		font-family: var(--font-teko);
+		font-weight: 600;
+	}
 }
