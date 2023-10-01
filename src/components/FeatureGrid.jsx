@@ -4,6 +4,10 @@ import { BsHeartPulse, BsWater } from "react-icons/bs"
 import { LuApple } from "react-icons/lu"
 
 const FeatureGrid = ({ textColour, hoverColour, iconColour }) => {
+	const textColourVariants = {
+		black: "text-black",
+		white: "text-white"
+	}
 	return (
 		<div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-12 text-center">
 			<div className="flex flex-col justify-center items-center">
@@ -13,7 +17,7 @@ const FeatureGrid = ({ textColour, hoverColour, iconColour }) => {
 					className={`text-${iconColour}`}
 				/>
 				<h3
-					className={`text-${textColour} uppercase text-xl py-4 tracking-wide hover:text-${hoverColour} duration-300 cursor-pointer`}
+					className={`${textColourVariants[textColour]} uppercase text-xl py-4 tracking-wide hover:text-${hoverColour} duration-300 cursor-pointer`}
 				>
 					Quality equipment
 				</h3>
