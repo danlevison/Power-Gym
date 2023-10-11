@@ -23,14 +23,14 @@ const MotionHeadings = () => {
 				Break free from the routine. Train like world champions and achieve your
 				peak fitness level.
 			</motion.h2>
-			<motion.h2
+			<motion.h3
 				initial={{ y: 500, opacity: 0, rotate: 90 }}
 				animate={{ y: 0, opacity: 100, rotate: 90 }}
 				transition={{ delay: 1.2 }}
 				className="hidden lg:block absolute top-[10%] right-[-5%] uppercase text-white text-5xl transform rotate-90 origin-left w-[300px]"
 			>
 				What we have to offer
-			</motion.h2>
+			</motion.h3>
 		</div>
 	)
 }

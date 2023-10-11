@@ -11,7 +11,7 @@ const ubuntu = Ubuntu({
 export const metadata = {
 	title: "Power 力 | Gym",
 	description:
-		"Power gym is a professional fitness facility that offers a wide range of exercise equipment, classes, and amenities to help individuals achieve their fitness goals. Discover the benefits of joining a commercial gym and how to make the most of your membership."
+		"Power Gym: Your professional fitness facility with diverse equipment, classes, and perks. Achieve your fitness goals at our commercial gym. Join us now!"
 }
 
 export default function RootLayout({ children }) {
