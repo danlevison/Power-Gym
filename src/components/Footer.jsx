@@ -11,9 +11,9 @@ const Footer = () => {
 			<div className="max-w-[1440px] mx-auto py-20 px-6 sm:px-10 2xl:px-0">
 				<div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10">
 					<div>
-						<h2 className="text-white text-3xl uppercase">
+						<h3 className="text-white text-3xl uppercase">
 							Power <span className="text-accent">力</span>
-						</h2>
+						</h3>
 						<p className="text-[B1B2B2] py-7 w-[80%]">
 							Dis sociis Theme natoque penatibus et magnis dis parturie montes,
 							nascetur ridiculus mus. Curabitur ullamcorper.
@@ -44,28 +44,28 @@ const Footer = () => {
 					</div>
 
 					<div>
-						<h2 className="text-white text-3xl uppercase">Latest news</h2>
+						<h3 className="text-white text-3xl uppercase">Latest news</h3>
 						<ul className="flex flex-col gap-4">
 							<li className="mt-7">
-								<h3 className="text-[#717274] text-[20px] uppercase tracking-wide hover:text-white cursor-pointer duration-300">
+								<h4 className="text-[#717274] text-[20px] uppercase tracking-wide hover:text-white cursor-pointer duration-300">
 									Fitness classes for you
-								</h3>
+								</h4>
 								<p className="uppercase text-sm font-normal pb-4 border-b border-[#717274] tracking-widest">
 									October 15, 2023
 								</p>
 							</li>
 							<li>
-								<h3 className="text-[#717274] text-[20px] uppercase tracking-wide hover:text-white cursor-pointer duration-300">
+								<h4 className="text-[#717274] text-[20px] uppercase tracking-wide hover:text-white cursor-pointer duration-300">
 									The top compound lifts to grow muscle
-								</h3>
+								</h4>
 								<p className="uppercase text-sm font-normal pb-4 border-b border-[#717274] tracking-widest">
 									October 15, 2023
 								</p>
 							</li>
 							<li>
-								<h3 className="text-[#717274] text-[20px] uppercase tracking-wide hover:text-white cursor-pointer duration-300">
+								<h4 className="text-[#717274] text-[20px] uppercase tracking-wide hover:text-white cursor-pointer duration-300">
 									Diet to boost performance
-								</h3>
+								</h4>
 								<p className="uppercase text-sm font-normal pb-4 border-b border-[#717274] tracking-widest">
 									October 15, 2023
 								</p>
@@ -74,7 +74,7 @@ const Footer = () => {
 					</div>
 
 					<div>
-						<h2 className="text-white text-3xl uppercase">Useful links</h2>
+						<h3 className="text-white text-3xl uppercase">Useful links</h3>
 						<ul className="flex flex-col gap-6 mt-7">
 							<li>
 								<Link
@@ -120,7 +120,7 @@ const Footer = () => {
 					</div>
 
 					<div>
-						<h2 className="text-white text-3xl uppercase">Contact</h2>
+						<h3 className="text-white text-3xl uppercase">Contact</h3>
 						<form className="flex flex-col gap-2 py-8">
 							<label
 								htmlFor="name"

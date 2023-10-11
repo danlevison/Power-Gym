@@ -77,14 +77,14 @@ const QuoteSection = () => {
 							className="text-white flex justify-center w-full mb-12"
 						/>
 						<blockquote>
-							<h2 className="text-white text-2xl md:text-4xl uppercase tracking-wide text-center w-full lg:w-[60%] mx-auto leading-snug">
+							<p className="font-[teko] font-semibold text-white text-2xl md:text-4xl uppercase tracking-wide text-center w-full lg:w-[60%] mx-auto leading-snug">
 								Reaching an age where prioritizing fitness and health matters
 								most. Our bodies rely on us! Initiate self-care for your body,
 								and it reciprocates. Embrace a clean diet and intense exercise.
-							</h2>
-							<p className="text-white uppercase tracking-widest mt-12 font-normal">
-								John Smith, Nutritionist
 							</p>
+							<cite className="block text-white uppercase tracking-widest mt-12 font-normal">
+								John Smith, Nutritionist
+							</cite>
 						</blockquote>
 					</div>
 
@@ -95,14 +95,14 @@ const QuoteSection = () => {
 							className="text-white flex justify-center w-full mb-12"
 						/>
 						<blockquote>
-							<h2 className="text-white text-2xl md:text-4xl uppercase tracking-wide text-center w-full lg:w-[60%] mx-auto leading-snug">
+							<p className="font-[teko] font-semibold text-white text-2xl md:text-4xl uppercase tracking-wide text-center w-full lg:w-[60%] mx-auto leading-snug">
 								Reaching an age where prioritizing fitness and health matters
 								most. Our bodies rely on us! Initiate self-care for your body,
 								and it reciprocates. Embrace a clean diet and intense exercise.
-							</h2>
-							<p className="text-white uppercase tracking-widest mt-12 font-normal">
-								John Smith, Nutritionist
 							</p>
+							<cite className="block text-white uppercase tracking-widest mt-12 font-normal">
+								John Smith, Nutritionist
+							</cite>
 						</blockquote>
 					</div>
 				</Slider>

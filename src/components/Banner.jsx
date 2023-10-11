@@ -52,7 +52,9 @@ const Banner = () => {
 				{sponsors.map((sponsor) => (
 					<ul key={sponsor}>
 						<li>
-							<h2 className="text-white uppercase text-5xl">{sponsor}</h2>
+							<p className="font-[teko] font-semibold text-white uppercase text-5xl">
+								{sponsor}
+							</p>
 						</li>
 					</ul>
 				))}
