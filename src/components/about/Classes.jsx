@@ -31,6 +31,7 @@ const Classes = () => {
 		<section
 			id="classes"
 			className="min-h-screen w-full"
+			style={{ scrollMarginTop: "5em" }}
 		>
 			<div className="max-w-[1440px] mx-auto px-10 py-16">
 				<div className="flex flex-col justify-center items-center gap-5 text-center mb-10">
