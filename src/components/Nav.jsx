@@ -9,6 +9,7 @@ import { TbMenu } from "react-icons/tb"
 const Nav = () => {
 	const [nav, setNav] = useState(false)
 	const [scrollY, setScrollY] = useState(0)
+	const [windowWidth, setWindowWidth] = useState(null)
 	const pathname = usePathname()
 
 	useEffect(() => {
@@ -22,6 +23,33 @@ const Nav = () => {
 			window.removeEventListener("scroll", handleScroll)
 		}
 	}, [scrollY])
+
+	useEffect(() => {
+		document.body.style.overflow = nav ? "hidden" : "unset"
+		document.documentElement.style.overflow = nav ? "hidden" : "unset"
+
+		return () => {
+			document.body.style.overflow = "unset"
+			document.documentElement.style.overflow = "unset"
+		}
+	}, [nav])
+
+	useEffect(() => {
+		const handleResize = () => {
+			setWindowWidth(window.innerWidth)
+			const newWidth = window.innerWidth
+			setWindowWidth(newWidth)
+			if (newWidth >= 768) {
+				setNav(false)
+			}
+		}
+
+		window.addEventListener("resize", handleResize)
+
+		return () => {
+			window.removeEventListener("resize", handleResize)
+		}
+	}, [])
 
 	const handleNav = () => {
 		setNav(!nav)
@@ -170,7 +198,7 @@ const Nav = () => {
 									Power<span className="text-accent">力</span>
 								</p>
 							</div>
-							<ul className="flex flex-col gap-28 uppercase text-primaryText text-sm tracking-widest">
+							<ul className="flex flex-col gap-24 uppercase text-primaryText text-sm tracking-widest">
 								<li>
 									<NavLink
 										href={"/"}
