@@ -108,34 +108,34 @@ const Nav = ({ nav, setNav }) => {
 					{nav ? (
 						<RiCloseLine
 							size={25}
-							className="text-white"
+							className="text-black"
 						/>
 					) : (
 						<TbMenu
 							size={25}
-							className="text-white"
+							className="text-black"
 						/>
 					)}
 				</button>
 			</nav>
 
 			{nav && (
-				<ul className="md:hidden flex flex-col items-center basis-full gap-10 uppercase bg-black text-primaryText text-sm tracking-widest py-8">
-					<li>
+				<ul className="md:hidden flex flex-col items-center basis-full gap-5 uppercase bg-white border-b border-gray-300 text-primaryText text-sm tracking-widest pt-8 pb-4">
+					<li className="border-b w-2/3 text-center pb-4">
 						<NavLink
 							href={"/"}
 							title={"Home"}
 							className={pathname === "/" ? "text-accent" : ""}
 						/>
 					</li>
-					<li>
+					<li className="border-b w-2/3 text-center pb-4">
 						<NavLink
 							href={"/about"}
 							title={"About us"}
 							className={pathname === "/about" ? "text-accent" : ""}
 						/>
 					</li>
-					<li>
+					<li className="border-b w-2/3 text-center pb-4">
 						<NavLink
 							href={"/pricing"}
 							title={"Pricing"}
