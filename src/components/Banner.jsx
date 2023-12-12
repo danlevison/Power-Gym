@@ -4,6 +4,7 @@ import React from "react"
 import Slider from "react-slick"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
+import { RxDotFilled } from "react-icons/rx"
 
 const Banner = () => {
 	const sponsors = [
@@ -15,12 +16,17 @@ const Banner = () => {
 	]
 
 	var settings = {
-		dots: false,
+		dots: true,
 		arrows: false,
 		infinite: true,
 		speed: 500,
 		slidesToShow: 4,
 		swipeToSlide: true,
+		customPaging: () => (
+			<div className={`text-white text-2xl`}>
+				<RxDotFilled className="mt-8" />
+			</div>
+		),
 		responsive: [
 			{
 				breakpoint: 1024,
@@ -29,7 +35,7 @@ const Banner = () => {
 				}
 			},
 			{
-				breakpoint: 600,
+				breakpoint: 765,
 				settings: {
 					slidesToShow: 2
 				}

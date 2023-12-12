@@ -9,6 +9,7 @@ import "slick-carousel/slick/slick-theme.css"
 import "../app/styles/slick.css"
 import { SlArrowRight, SlArrowLeft } from "react-icons/sl"
 import { BiSolidQuoteLeft } from "react-icons/bi"
+import { RxDotFilled } from "react-icons/rx"
 import runner from "../../public/assets/runner.jpg"
 
 const QuoteSection = () => {
@@ -48,7 +49,26 @@ const QuoteSection = () => {
 		slidesToShow: 1,
 		initialSlide: 0,
 		prevArrow: <CustomPrevArrow />,
-		nextArrow: <CustomNextArrow />
+		nextArrow: <CustomNextArrow />,
+		customPaging: () => (
+			<div className={`text-white text-2xl`}>
+				<RxDotFilled className="mt-8" />
+			</div>
+		),
+		responsive: [
+			{
+				breakpoint: 765,
+				settings: {
+					dots: true
+				}
+			},
+			{
+				breakpoint: 480,
+				settings: {
+					dots: true
+				}
+			}
+		]
 	}
 
 	return (
